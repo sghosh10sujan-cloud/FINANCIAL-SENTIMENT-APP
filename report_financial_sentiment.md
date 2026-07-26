@@ -58,6 +58,9 @@ Tech Stack :
 Future Work :
 
 • Explore transformer-based embeddings (e.g., FinBERT) as a stronger alternative to BoW/TF-IDF
+
 • Expand training data with additional labeled financial text sources to improve minority-class recall
+
 • Add explainability (e.g., top contributing tokens per prediction) for analyst trust
+
 • Deploy as an API or lightweight dashboard for real-time sentence scoring
