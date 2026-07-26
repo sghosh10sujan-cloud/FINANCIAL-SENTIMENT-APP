@@ -29,7 +29,9 @@ Macro F1-score and per-class recall were prioritized over plain accuracy, since 
 Challenges :
 
 • Class imbalance across three classes made the minority (negative) class harder to detect than a simple binary imbalance problem — class-weighting was needed rather than accuracy alone as a guide.
+
 • Choosing between BoW and TF-IDF required empirical comparison rather than assumption, since the two can perform differently depending on text length and vocabulary size.
+
 • Financial language is domain-specific (e.g., "loss" and "decline" can appear in neutral factual statements), which limits how much generic sentiment heuristics transfer.
 
 Impact :
