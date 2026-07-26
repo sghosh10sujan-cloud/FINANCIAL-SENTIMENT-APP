@@ -35,18 +35,25 @@ Challenges :
 • Financial language is domain-specific (e.g., "loss" and "decline" can appear in neutral factual statements), which limits how much generic sentiment heuristics transfer.
 
 Impact :
+
 This tool can :
 
 • Serve as a lightweight sentiment-tagging layer for financial news feeds
+
 • Help analysts triage large volumes of financial text by sentiment before manual review
+
 • Serve as a template for extending to other domain-specific text classification problems
 
 Tech Stack :
 
 • Python
+
 • Scikit-learn
+
 • Pandas, NumPy
+
 • Matplotlib, Seaborn
+
 
 Future Work :
 
