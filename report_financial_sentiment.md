@@ -1,7 +1,6 @@
 Project Report : Financial PhraseBank Sentiment Analysis
 
 Problem Statement :
-
 Financial news sentences carry sentiment that can move markets, but manually reading and classifying large volumes of financial text does not scale. This project aims to build a text classification model that automatically labels financial news sentences as positive, negative, or neutral in sentiment.
 
 Project Overview:
@@ -11,6 +10,7 @@ Dataset Summary:
 The dataset (Financial PhraseBank) contains 5,842 financial news sentences, each labeled with one of three sentiment classes: positive, negative, or neutral. Numeric tokens were deliberately retained during text cleaning, since numbers (e.g., percentage changes, monetary figures) carry meaningful signal in financial text rather than being noise to strip out. The dataset was split into training and test sets before any vectorizer was fit.
 
 Exploratory Data Analysis (EDA Highlights):
+
 • The dataset showed a class imbalance typical of financial sentiment corpora, with neutral statements forming a large share of sentences and negative statements forming the smallest class.
 • Both Bag-of-Words (CountVectorizer) and TF-IDF vectorization were explored to compare a simple frequency-based representation against a weighted one.
 
