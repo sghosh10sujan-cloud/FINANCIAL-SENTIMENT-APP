@@ -1,6 +1,7 @@
-Project Report: Financial PhraseBank Sentiment Analysis
+Project Report : Financial PhraseBank Sentiment Analysis
 
-Problem Statement:
+Problem Statement :
+
 Financial news sentences carry sentiment that can move markets, but manually reading and classifying large volumes of financial text does not scale. This project aims to build a text classification model that automatically labels financial news sentences as positive, negative, or neutral in sentiment.
 
 Project Overview:
