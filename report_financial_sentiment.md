@@ -20,7 +20,9 @@ Two vectorization schemes (BoW, TF-IDF) were combined with two classifiers (Naiv
 The best-performing configuration — Logistic Regression (class-weight balanced) with TF-IDF features — achieved :
 
 • Accuracy: 67.9%
+
 • Macro F1-score: 0.626
+
 • Recall (negative class): 50.6%
 
 Evaluation Metric :
