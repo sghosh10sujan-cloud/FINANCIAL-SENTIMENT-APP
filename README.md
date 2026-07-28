@@ -15,6 +15,7 @@ This project involves natural language processing and sentiment classification o
 * `tfidf_vectorizer.pkl` — Serialized TF-IDF vectorizer, fit on the training set
 * `sentiment_numbers.json` — Label mapping used to decode model predictions
 * `app.py` — Streamlit app for real-time sentiment prediction on user-input text
+* `report.pdf` — Project summary report
 
 ---
 
