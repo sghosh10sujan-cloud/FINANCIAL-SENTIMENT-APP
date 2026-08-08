@@ -4,15 +4,17 @@ import json
 import string
 import nltk
 from nltk.corpus import stopwords
+import os
 
+BASE_DIR=os.path.dirname(os.path.abspath(__file__)
 nltk.download('stopwords')
 stop_words = set(stopwords.words('english'))
 
 # Load saved artifacts
-model = joblib.load('sentiment_model.pkl')
-vectorizer = joblib.load('tfidf_vectorizer.pkl')
+model = joblib.load(os.path.join(BASE_DIR, 'sentiment_model.pkl'))
+vectorizer = joblib.load(os.path.join(BASE_DIR, 'tfidf_vectorizer.pkl'))
 
-with open('sentiment_numbers.json') as f:
+with open(os.path.join(BASE_DIR, 'sentiment_numbers.json')) as f:
     sentiment_numbers = json.load(f)
 
 # reverse mapping: number -> label
@@ -38,7 +40,7 @@ if st.button("Predict"):
         vectorized = vectorizer.transform([cleaned])
         prediction = model.predict(vectorized)[0]
         prediction_label = number_to_sentiment[prediction]
-
+    
         probs = model.predict_proba(vectorized)[0]
 
         st.subheader(f"Prediction: **{prediction_label.upper()}**")
