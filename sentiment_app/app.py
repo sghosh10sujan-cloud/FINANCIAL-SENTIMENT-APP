@@ -6,7 +6,7 @@ import nltk
 from nltk.corpus import stopwords
 import os
 
-BASE_DIR=os.path.dirname(os.path.abspath(__file__)
+BASE_DIR=os.path.dirname(os.path.abspath(__file__))
 nltk.download('stopwords')
 stop_words = set(stopwords.words('english'))
 
